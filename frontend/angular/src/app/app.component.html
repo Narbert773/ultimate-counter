@@ -1,4 +1,12 @@
-<h1>Hello</h1>
+<h1>hello</h1>
 <p>{{ counter }}</p>
+<p>{{ doubleCounter }}</p>
 <button type="button" (click)="incrementCounter()">+</button>
-<button type="button" (click)="decrementCouner()">-</button>
+<button type="button" (click)="decrementCounter()">-</button>
+<div>
+  <ul>
+    <li *ngFor="let post of posts">
+      {{ post.title }}
+    </li>
+  </ul>
+</div>
