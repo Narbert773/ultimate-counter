@@ -21,17 +21,6 @@ function decrementCount() {
   count.value -= 1;
 }
 
-// function getPostsOld() {
-//   fetch('https://jsonplaceholder.typicode.com/posts').then((response) =>
-//     response
-//       .json()
-//       .then((postData) => {
-//         posts.value = postData.slice(0, 10);
-//       })
-//       .catch((error) => console.error(error))
-//   );
-// }
-
 async function getPosts() {
   const data = await fetch('https://jsonplaceholder.typicode.com/posts');
   const postsData = await data.json();
